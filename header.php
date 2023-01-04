@@ -16,7 +16,7 @@
             <div class="container-fluid px-3 px-sm-5">
                 <a class="navbar-brand" href="#">
                     <img src="./imagenes/Logotipo_centro_de_estética_cuidado_mujer_rosa__1_-removebg-preview.png" alt="Logo" height="80" class="d-inline-block align-text-center">
-                    <span class="h4 px-5">Medicina Estetica</span>
+                    <span class="h4 px-5 d-none d-md-inline">Medicina Estetica</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

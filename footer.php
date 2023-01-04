@@ -5,7 +5,7 @@
                     <p class="h4 px-3">Dra Belen Cantarini - Medicina Estetica</p>
                 </a>
                 <div class="d-flex">
-                    <ul class="mediaicons d-flex nav">  
+                    <ul class="mediaicons d-flex nav justify-content-center">  
                         <li class="nav-item"><a class="nav-link d-flex" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-1x" aria-hidden="true"></i><p class="d-none">Facebook</p></a></li>
                         <li class="nav-item"><a class="nav-link d-flex" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-1x" aria-hidden="true"></i><p class="d-none">Instagram</p></a></li>
                         <li class="nav-item"><a class="nav-link d-flex" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-1x" aria-hidden="true"></i><p class="d-none">Twitter</p></a></li>

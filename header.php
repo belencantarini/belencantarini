@@ -27,13 +27,13 @@
                             <a class="nav-link" aria-current="page" href="index.php">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="tienda.php">Los tratamientos</a>
+                            <a class="nav-link" aria-current="page" href="index.php#tratamientos">Los tratamientos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="index.php#sobremi">Sobre mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link purple" aria-current="page" href="contacto.php">Contacto</a>
+                            <a class="nav-link purple" aria-current="page" href="index.php#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>

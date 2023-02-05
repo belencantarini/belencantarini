@@ -1,15 +1,11 @@
 .banner {
     display: flex;
     flex-direction: column;
-    padding: 50px;
     background: url("https://img.freepik.com/foto-gratis/mujer-cara-marcada-recibiendo-inyeccion-botox_107420-74126.jpg?w=900&t=st=1668254373~exp=1668254973~hmac=308659a6a3020594a8600beae04866f2b35f9beceb76e7c7d2deaf0ac14d0691"),rgba(255, 6, 247, 0.7);
     background-blend-mode: color;
     background-size: cover;
     height: 50vh;
-    justify-content: end;
-    align-items: flex-end;
     color: white;
-    text-align: right;
 }
 
 .purple {
@@ -41,6 +37,36 @@ footer {
     color: white;
 }
 
+.pink>.nav-link {
+    color: black !important;
+}
+
+.pink>.nav-link.active {
+    background-color: rgb(244, 127, 146) !important;
+    color: white !important;
+}
+
+.pink>button>.nav-link {
+    color: black !important;
+}
+
+
+.pink>button>.nav-link:hover {
+    color: white !important;
+}
+
+.image-size {
+    height: 300px;
+}
+
+.tto-image {
+    object-fit: contain !important;
+}
+
+.doctor {
+    width: 300px;
+    height: auto;
+}
 
 .mediaicons>li>a>i{
     display: flex;

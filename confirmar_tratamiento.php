@@ -16,15 +16,15 @@ include('header.php');?>
         
         <div class="border rounded-3">
             <nav class="nav pink justify-content-end gap-2 py-3 px-4">
-                <a class="nav-link active" href="ver_tratamientos.php">Listado de tratamientos</a>
+                <a class="nav-link" href="ver_tratamientos.php">Listado de tratamientos</a>
                 <a class="nav-link" href="administrador.php">Generar nuevo tratamiento</a>
-                <a class="nav-link" href="confirmar_tratamiento.php">Pendientes de confirmacion</a>
+                <a class="nav-link active" href="confirmar_tratamiento.php">Pendientes de confirmacion</a>
                 <button type="button" class="btn btn-outline-dark p-0"><a class="nav-link" href="salir.php">SALIR</a></button>    
             </nav>
             <div>
                 <div class="row row-cols-lg-3 row-cols-1 g-3 p-3">
                     <?php include('realizar_conexion.php');
-                    $consulta_db = mysqli_query($conexion, "SELECT * FROM tratamientos WHERE estado = 'finalizado'");
+                    $consulta_db = mysqli_query($conexion, "SELECT * FROM tratamientos WHERE estado = 'procesando'");
                     if (mysqli_num_rows($consulta_db) > 0) {
                     while ($mostrar_datos = mysqli_fetch_assoc($consulta_db)){
                     ?>
@@ -42,6 +42,7 @@ include('header.php');?>
                                 <div class="d-flex gap-2 justify-content-end">
                                     <button type="button" class="btn btn-warning"><a class="text-decoration-none text-dark" href="editar_tratamiento.php?id=<?php echo $mostrar_datos['id']; ?>">Editar</a></button>
                                     <button type="button" class="btn btn-danger"><a class="text-decoration-none text-light" href="eliminar_tratamiento.php?id=<?php echo $mostrar_datos['id']; ?>">Eliminar</a></button>
+                                    <button type="button" class="btn btn-success"><a class="text-decoration-none text-light" href="finalizar_tratamiento.php?id=<?php echo $mostrar_datos['id']; ?>">Finalizar</a></button>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +50,7 @@ include('header.php');?>
                     <?php
                     } 
                     } else {
-                        echo "<h4 class='p-5 w-100'>No hay tratamientos finalizados para mostrar</h4>";
+                        echo "<h4 class='p-5 w-100'>No hay tratamientos pendientes de confirmacion para mostrar</h4>";
                     }
                     mysqli_close($conexion);
                     ?>

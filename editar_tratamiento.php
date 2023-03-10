@@ -1,4 +1,8 @@
-<?php include('header.php');?>
+<?php 
+session_start();
+if (isset($_SESSION['admin'])){
+include('header.php');?>
+
 <main class="flex-grow-1">
 <section class="w-75 m-auto py-5">
     <div>
@@ -9,9 +13,10 @@
         
         <div class="border rounded-3">
             <nav class="nav pink justify-content-end gap-2 py-3 px-4">
+                <a class="nav-link" href="ver_tratamientos.php">Listado de tratamientos</a>
                 <a class="nav-link" href="administrador.php">Generar nuevo tratamiento</a>
-                <a class="nav-link" href="ver_tratamientos.php">Ver tratamientos</a>
-                <button type="button" class="btn btn-outline-dark p-0"><a class="nav-link" href="index.php">VOLVER</a></button>    
+                <a class="nav-link" href="confirmar_tratamiento.php">Pendientes de confirmacion</a>
+                <button type="button" class="btn btn-outline-dark p-0"><a class="nav-link" href="salir.php">SALIR</a></button>    
             </nav>
             <div>
                 <div>
@@ -38,12 +43,13 @@
                         <label class="mt-3" for="formDescripcion">Descripcion</label>
                         <textarea class="form-control"  id="formDescripcion" name="descripcion" cols="30" rows="3" placeholder="Descripcion"><?php echo $editar_datos['descripcion']?></textarea>
                         <label for="formImagen" class="form-label mt-3">URL de la imagen</label>
-                        <input type="text" class="form-control mb-3"  id="formImagen" name="imagen" placeholder="URL imagen" value='<?php echo $editar_datos['imagen']?>'>
-                        <div class="d-flex justify-content-center p-3"><img src="<?php echo $editar_datos['imagen']?>" class="img-thumbnail" alt="img-thumbnail" height="200"></div>
+                        <input disabled type="text" class="form-control mb-3"  id="formImagen" name="imagen" placeholder="URL imagen" value='<?php echo $editar_datos['imagen']?>'>
+                        <div class="d-flex justify-content-center p-3"><img src="<?php echo $editar_datos['imagen']?>" class="img-thumbnail" alt="img-thumbnail" width="200"></div>
                         <div class="d-flex justify-content-center"><input class="btn btn-dark" type="submit" value="Guardar cambios"></input></div>
                     </form>
                     <?php
                     }
+
                     mysqli_close($conexion);
                     ?>
                 </div>
@@ -52,5 +58,8 @@
     </div>
 </section>
 </main>
-<?php include('footer.php');?>
-
+<?php include('footer.php');} 
+else{
+    header("Location:login.php");
+}
+?> 

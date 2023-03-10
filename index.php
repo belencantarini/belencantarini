@@ -8,7 +8,7 @@
                 <button type="button" class="btn btn-outline-dark"><a href="index.php#tratamientos" class="text-decoration-none text-white">Quiero saber más!</a></button>
                 <button type="button" class="btn-purple btn "><a href="index.php#contacto" class="text-white text-decoration-none">Contacto</a></button>
             </div>
-            <div>
+            <div class="px-5">
                 <?php include('fecha.php');
                 echo $fecha_actual;
                 ?>

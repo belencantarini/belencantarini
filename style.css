@@ -18,8 +18,8 @@
 }
 
 .btn-purple {
-    background-color: #7648ab;
-    color: white;
+    background-color: #7648ab !important;
+    color: white !important;
 }
 
 .btn-purple:hover {
@@ -55,9 +55,37 @@ footer {
     color: white !important;
 }
 
+.btn-pink{
+    background-color: rgb(244, 127, 146) !important;
+    color: white !important;
+}
+
+.btn-pink:hover {
+    background-color: rgb(236, 82, 108) !important;
+}
+
 .image-size {
     height: 300px;
 }
+
+.cargarImagen {
+    border: none;
+    background: rgb(244, 127, 146);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+    -webkit-transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    -ms-transition: background .2s ease-in-out;
+    -o-transition: background .2s ease-in-out;
+}
+
+.cargarImagen:hover {
+    background: rgb(236, 82, 108) ;
+}
+
 
 .tto-image {
     object-fit: contain !important;

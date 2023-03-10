@@ -5,15 +5,14 @@
     $tratamiento_form = $_POST['tratamiento'];
     $tarifa_form = $_POST['tarifa'];
     $descripcion_form = $_POST['descripcion'];
-    $imagen_form = $_POST['imagen'];
 
     include('realizar_conexion.php');
 
-    mysqli_query($conexion, "UPDATE tratamientos SET tratamiento='$tratamiento_form', tarifa='$tarifa_form', imagen='$imagen_form', descripcion='$descripcion_form' WHERE id='$id_form'");
+    mysqli_query($conexion, "UPDATE tratamientos SET tratamiento='$tratamiento_form', tarifa='$tarifa_form', descripcion='$descripcion_form', estado='procesando' WHERE id='$id_form'");
 
     mysqli_close($conexion);
 
 
 // EXITO DE CARGA REGRESA A VER TRATAMIENTOS
-header("Location: ver_tratamientos.php");
+header("Location: confirmar_tratamiento.php");
 

@@ -5,7 +5,7 @@
             <div>
                 <div class="row row-cols-lg-3 row-cols-1 g-3 p-3">
                     <?php include('realizar_conexion.php');
-                    $consulta_db = mysqli_query($conexion, "SELECT * FROM tratamientos");
+                    $consulta_db = mysqli_query($conexion, "SELECT * FROM tratamientos WHERE estado = 'finalizado'");
                     while ($mostrar_datos = mysqli_fetch_assoc($consulta_db)){
                     ?>
                     <div class="col">

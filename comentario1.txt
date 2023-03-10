@@ -1,40 +1,35 @@
 <div class='border'>
-    <div class='d-flex flex-row p-3'>
-        <div class='p-2'><span class='round'><img src='https://cdn.pixabay.com/photo/2022/12/21/03/54/quotes-7669023_960_720.png' alt='comentario' width='50'></span></div>
-        <div class='w-100'>
-            <h5 class='pt-3'>Romina Dadi</h5>
-            <div>
-                <span>Sábado, 04 de Febrero de 2023.</span>
+        <div class='d-flex flex-sm-row flex-column p-3'>
+            <div class='d-flex'><span class='round mx-auto'><img src='https://cdn.pixabay.com/photo/2022/12/21/03/54/quotes-7669023_960_720.png' alt='comentario' width='50'></span></div>
+            <div class='w-100 ps-2 text-center text-sm-start'>
+                <h5>Romina Dadi</h5>
+                <span>Martes, 07 de Febrero de 2023.</span>
                 <span class='px-2'><i class='fa fa-heart'></i></span>
-                <span>19:45:29 hs.</span>
+                <span>10:28:44 hs.</span>
+                <p>Fue muy buena mi experiencia, la atencion fue amable, la doctora me explicó todos los pasos y me sentí muy cómoda. Definitivamente, voy a volver! Muchas gracias por todo!</p>
             </div>
-            <p class='m-b-5 m-t-10'>Fue muy buena mi experiencia, la atencion fue amable, la doctora me explicó todos los pasos y me sentí muy cómoda. Definitivamente, voy a volver! Muchas gracias por todo!</p>
         </div>
-    </div>
 </div><div class='border'>
-                <div class='d-flex flex-row p-3'>
-                    <div class='p-2'><span class='round'><img src='https://cdn.pixabay.com/photo/2022/12/21/03/54/quotes-7669023_960_720.png' alt='comentario' width='50'></span></div>
-                    <div class='w-100'>
-                        <h5 class='pt-3'>Pamela García</h5>
-                        <div>
-                            <span>Sábado, 04 de Febrero de 2023.</span>
-                            <span class='px-2'><i class='fa fa-heart'></i></span>
-                            <span>19:56:56 hs.</span>
-                        </div>
-                        <p class='m-b-5 m-t-10'>Me encantó todo! Desde el momento que entré sentí que estaba en manos de una doctora super confiable! Nos veremos nuevamente! Gracias por todo! </p>
-                    </div>
-                </div>
-        </div><div class='border'>
-                <div class='d-flex flex-row p-3'>
-                    <div class='p-2'><span class='round'><img src='https://cdn.pixabay.com/photo/2022/12/21/03/54/quotes-7669023_960_720.png' alt='comentario' width='50'></span></div>
-                    <div class='w-100'>
-                        <h5 class='pt-3'>Leila Senger</h5>
-                        <div>
-                            <span>Sábado, 04 de Febrero de 2023.</span>
-                            <span class='px-2'><i class='fa fa-heart'></i></span>
-                            <span>20:01:01 hs.</span>
-                        </div>
-                        <p class='m-b-5 m-t-10'>Todo excelente! Profesional recomendable! Gracias!</p>
-                    </div>
-                </div>
+        <div class='d-flex flex-sm-row flex-column p-3'>
+            <div class='d-flex'><span class='round mx-auto'><img src='https://cdn.pixabay.com/photo/2022/12/21/03/54/quotes-7669023_960_720.png' alt='comentario' width='50'></span></div>
+            <div class='w-100 ps-2 text-center text-sm-start'>
+                <h5>Pamela Garcia</h5>
+                <span>Martes, 07 de Febrero de 2023.</span>
+                <span class='px-2'><i class='fa fa-heart'></i></span>
+                <span>10:29:20 hs.</span>
+                <p>Ame todo el proceso de principio a fin!
+Super recomiendo!</p>
+            </div>
         </div>
+</div><div class='border'>
+        <div class='d-flex flex-sm-row flex-column p-3'>
+            <div class='d-flex'><span class='round mx-auto'><img src='https://cdn.pixabay.com/photo/2022/12/21/03/54/quotes-7669023_960_720.png' alt='comentario' width='50'></span></div>
+            <div class='w-100 ps-2 text-center text-sm-start'>
+                <h5>Lorena Ojeda</h5>
+                <span>Miércoles, 08 de Febrero de 2023.</span>
+                <span class='px-2'><i class='fa fa-heart'></i></span>
+                <span>07:34:05 hs.</span>
+                <p>Todo muy bien, voy a volver!!! Muchas gracias por la buena atencion!</p>
+            </div>
+        </div>
+</div>

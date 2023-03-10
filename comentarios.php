@@ -11,7 +11,6 @@
                 <div class="pb-3">Deja tu experiencia en nuestra comunidad</div>
             </div>
 
-
             <?php
             $documento = 'comentario1.txt';
             $archivo = fopen($documento, 'r');
